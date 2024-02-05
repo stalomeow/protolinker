@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Examples";
+option go_package = "github.com/stalomeow/protolinker/examples";
+
+// @group="group/one"
+message TopMessage {
+    int32 i = 1;
+
+    // @group="group/one"
+    message NestedMessage {
+        int32 i = 1;
+    }
+
+    message ExcludedNestedMessage {
+        int32 i = 1;
+
+        // @group="group/two"
+        message NestedNestedMessage {
+            int32 i = 1;
+        }
+    }
+}

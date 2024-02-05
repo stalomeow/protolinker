@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "Examples";
+option go_package = "github.com/stalomeow/protolinker/examples";
+
+// @group="group/one"
+message MessageA {
+    int32 i = 1;
+}
+
+// @group="group/one"
+message MessageB {
+    int32 i = 1;
+}
+
+// @group="group/two"
+message MessageC {
+    int32 i = 1;
+}
+
+// @group="group/two"
+message MessageD {
+    int32 i = 1;
+}

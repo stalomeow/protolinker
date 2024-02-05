@@ -1,0 +1,20 @@
+[out.csharp]
+namespace = "Examples"
+class = "NetMessageStore"
+filename = "NetMessageStore.cs"
+disposable_message = false
+
+[out.go]
+import_path = "github.com/stalomeow/protolinker/examples"
+package = "examples"
+filename = "github.com/stalomeow/protolinker/examples/net_message.go"
+
+[[groups]]
+name = "group/one"
+min = 100
+max = 300
+
+[[groups]]
+name = "group/two"
+min = 400
+max = 900
