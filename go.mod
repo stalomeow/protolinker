@@ -1,6 +1,6 @@
 module github.com/stalomeow/protolinker
 
-go 1.21
+go 1.22
 
 require google.golang.org/protobuf v1.31.0
 

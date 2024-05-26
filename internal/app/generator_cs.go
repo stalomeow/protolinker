@@ -278,7 +278,7 @@ func (g *CSharpGenerator) genLinkFile(allMsgTypeFullNames []string, rsp *pluginp
 }
 
 func (g *CSharpGenerator) convertToCSharpFileNameWithoutExt(ns string, filename string) (string, error) {
-	filename = strings.TrimSuffix(filename, path.Ext(filename))
+	filename = strings.TrimSuffix(path.Base(filename), path.Ext(filename))
 	filename = UnderscoresToCamelCase(filename, true, true)
 
 	if !g.hasBaseNamespace {

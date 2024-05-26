@@ -48,7 +48,7 @@ func (g *GoGenerator) Execute(req *pluginpb.CodeGeneratorRequest) (*pluginpb.Cod
 			continue
 		}
 
-		fileName := f.GeneratedFilenamePrefix + ".link.go"
+		fileName := f.GeneratedFilenamePrefix + "_link.pb.go"
 		genFile := plugin.NewGeneratedFile(fileName, f.GoImportPath)
 		g.writeFileHeader(f, genFile)
 
